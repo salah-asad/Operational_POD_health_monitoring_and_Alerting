@@ -1,3 +1,4 @@
+#import unitest and logging module
 import unittest
 import logging
 logging.disable(logging.CRITICAL)
@@ -20,4 +21,5 @@ class TestPodAlerts(unittest.TestCase):
     healthy_pod = {"name":"app", "status": "running", "restarts": 2}
     self.assertEqual(pod_severity(healthy_pod), Severity.OK)
 if __name__ == '__main__':
+
     unittest.main()
