@@ -1,3 +1,4 @@
+#import logging and import enum module from ENUM class
 import logging
 from enum import Enum
 #severity enum class
@@ -40,4 +41,5 @@ def log_pod(severity, pod):
 for pod in pods:
     severity = pod_severity(pod)
     log_pod(severity, pod)
+
 
